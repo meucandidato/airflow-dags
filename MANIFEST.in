@@ -5,6 +5,7 @@ include LICENSE
 include README.rst
 
 graft meucandidato_dags/processors
+graft meucandidato_dags/rows
 recursive-exclude * __pycache__
 recursive-exclude * *.py[co]
 

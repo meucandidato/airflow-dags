@@ -1,3 +1,5 @@
-ipython==6.1.0
-airflow==1.8.0
-ipdb==0.10.3
+ipython
+apache-airflow
+ipdb
+mongomock==3.8.0
+mock==2.0.0

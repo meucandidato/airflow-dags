@@ -1,0 +1,5 @@
+feedparser==5.2.1
+pymongo==3.5.1
+Logbook==1.1.0
+rows==0.3.1
+requests==2.21.0

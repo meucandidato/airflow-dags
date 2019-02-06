@@ -29,6 +29,12 @@ Instalação
 
     $ python setup.py install
 
+Caso tenha problemas na instalação do ``pendulum`` instale a versão 18.1 do ``pip``:
+
+.. code:: shell
+
+    $ pip install pip===18.1
+
 3. Instale localmente o airflow e `siga as instruções de configuração
    básicas <https://airflow.incubator.apache.org/start.html>`__ para sua
    execução.

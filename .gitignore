@@ -113,3 +113,8 @@ airflow
 *.csv
 *.gz
 .envrc
+*.pid
+*.db
+*.cfg
+logs/
+dags/

@@ -4,7 +4,7 @@ import unittest
 
 from mongomock import MongoClient
 
-from meucandidato_dags.processors.portals import G1FeedProcessor
+from meucandidato_dags.processors.feed_portals import G1FeedProcessor
 
 DB_MOCK = MongoClient().db
 

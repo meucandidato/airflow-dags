@@ -11,18 +11,11 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = [
-    "Flask==0.11.1",
-    "feedparser==5.2.1",
-    "pymongo==3.5.1",
-    "Logbook==1.1.0",
-    "rows==0.3.1"
-]
+with open('requirements.txt') as fp:
+    install_requires = fp.read()
 
-test_requirements = [
-    "mongomock==3.8.0",
-    "mock==2.0.0"
-]
+with open('requirements_dev.txt') as fp:
+    install_test_requires = fp.read()
 
 
 setup(
@@ -35,7 +28,7 @@ setup(
     url='https://github.com/meucandidato/meucandidato-dags',
     packages=find_packages(include=['meucandidato_dags']),
     include_package_data=True,
-    install_requires=requirements,
+    install_requires=install_requires,
     zip_safe=False,
     keywords='dags, data, meucandidato, politics',
     classifiers=[
@@ -51,5 +44,5 @@ setup(
         'Programming Language :: Python :: 3.5',
     ],
     test_suite='tests',
-    test_require=test_requirements
+    test_require=install_test_requires
 )
